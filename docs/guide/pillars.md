@@ -86,6 +86,7 @@ In traditional application development, there has been a focus on increasing the
 - Costs for cloud environments are kept low through the use of commodity hardware, so occasional hardware failures must be expected.
 - Applications often depend on external services, which may become temporarily unavailable or throttle high-volume users.
 - Today's users expect an application to be available 24/7 without ever going offline.
+- Applications should not rely on Microsoft's data centers for resiliency, they must be designed for high availability.
 
 All of these factors mean that cloud applications must be designed to expect occasional failures and recover from them. Azure has many resiliency features already built into the platform. For example:
 
@@ -113,7 +114,7 @@ Monitoring and diagnostics are crucial. Cloud applications run in a remote datac
 
 The monitoring and diagnostics process has several distinct phases:
 
-- Instrumentation. Generating the raw data, from application logs, web server logs, diagnostics built into the Azure platform, and other sources.
+- Instrumentation. Generating the raw data from application logs, web server logs, diagnostics built into the Azure platform, and other sources.
 - Collection and storage. Consolidating the data into one place.
 - Analysis and diagnosis. To troubleshoot issues and see the overall health.
 - Visualization and alerts. Using telemetry data to spot trends or alert the operations team.
